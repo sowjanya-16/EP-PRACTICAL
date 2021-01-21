@@ -12,6 +12,7 @@ public class Studentmain {
 	  sb.setName("Sowjanya");
 	  sb.setEmail("nvs@gmail.com");
 	  StudentInsertion si=new StudentInsertion();
+	  try {
 	  int i=si.StudentInsert(sb);
 	  if(i>0)
 	  {
@@ -21,6 +22,12 @@ public class Studentmain {
 	  {
 		  System.out.println("insertion is fail");
 	  }
+	  }
+	  catch(Exception e)
+	  {
+		  System.out.println(e);
+	  }
 	  
   }
 }
+
