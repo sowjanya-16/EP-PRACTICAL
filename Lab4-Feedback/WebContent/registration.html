@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+   
+  background: url(https://www.slvrsf.org/wp-content/uploads/HiRes-1000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+</style>
+<title>Welcome to Registration Page</title>
+
+<script>
+function validation()
+{
+var id=document.f1.id.value;
+var name=document.f1.name.value;
+var email=document.f1.email.value;
+var phonenumber=document.f1.phonenumber.value;
+var username=document.f1.username.value;
+var password=document.f1.password.value;
+if(id==null||id=="")
+{
+alert("employee id should not be empty");
+}
+if(name==null||name=="")
+{
+alert("name should not be empty");
+}
+
+if(email==null||email=="")
+{
+alert("emailid should not be empty");
+}
+
+if(phonenumber==null||phonenumber=="")
+{
+alert("mobileno should not be empty");
+}
+if(username==null||username=="")
+{
+alert("username should not be empty");
+}
+if(password==null||password=="")
+{
+alert("password should not be empty");
+}
+if(name.length<8)
+{
+alert("name should have atleast 8 characters");
+}
+
+if(phonenumber.length<10)
+{
+alert("length of have mobileno should be 10");
+}
+if(username.length<8)
+{
+	alert("username should have atleast 8 characters");
+}
+if(password.length<8)
+{
+	alert("password should have atleast 8 characters");
+}
+var atposition=eid.indexOf("@");  
+var dotposition=eid.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=eid.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+} 
+
+}
+
+</script>
+</head>
+<body>
+<header>
+<h1 align="center">Welcome to Registration Page</h1>
+</header>
+<section>
+<center>
+<form action="RegisterInsert" name="f1" method="post" onsubmit="validation()">
+<table>
+<tr>
+<td>Regno:</td>
+<td><input type="number"name="id"><br></td>
+</tr>
+<tr>
+<td>Name:</td>
+<td><input type="text"name="name" ><br></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="email"name="email" ><br></td>
+</tr>
+<tr>
+
+<td>Phone number:</td>
+<td><input type="number"name="phonenumber" ><br></td>
+</tr>
+<tr>
+<td>Username:</td>
+<td><input type="text"name="username" ><br></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password"name="password" ><br></td>
+</tr>
+<tr>
+<td><center><input type="submit" value="Register"></center></td>
+</tr>
+</table>
+</form>
+</center>
+<section>
+
+</body>
+</html>

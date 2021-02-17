@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<style>
+body {
+   
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3oxMmy8OFPF_PzRS8gd0U_dxHaqeAl6cq9A&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+</style>
+<script>
+function validation()
+{
+
+var username=document.f2.username.value;
+var password=document.f2.password.value;
+
+if(username==null||username=="")
+{
+alert("username should not be empty");
+}
+if(password==null||password=="")
+{
+alert("password should not be empty");
+}
+if(username.length<8)
+{
+	alert("username should have atleast 8 characters");
+}
+if(password.length<8)
+{
+	alert("password should have atleast 8 characters");
+}
+
+
+}
+
+</script>
+</head>
+<body>
+<header>
+<h1 align="center">Login Page</h1>
+</header>
+<section>
+<center>
+<form action="LoginInsert" name="f2" method="get" onsubmit="validation()">
+<table>
+
+<tr>
+<td>Username:</td>
+<td><input type="text"name="username" required><br></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password"name="password" required><br></td>
+</tr>
+<tr>
+<td><center><input type="submit" value="login"></center></td>
+</tr>
+</table>
+</form>
+</center>
+<section>
+
+</body>
+</html>
